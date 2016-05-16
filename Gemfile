@@ -12,6 +12,7 @@ gem 'turbolinks'
 gem 'jquery-turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'figaro', '>= 1.0.0'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -28,6 +29,7 @@ group :development, :test do
   gem 'pry-rails'
   gem 'better_errors'
   gem 'awesome_print'
+
 
   gem 'spring'
   gem 'guard-rails'
