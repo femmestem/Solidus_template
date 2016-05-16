@@ -26,7 +26,19 @@ gem 'foundation-rails', '~> 6.2'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# Solidus
+gem 'solidus_api'
+gem 'solidus_frontend'
+gem 'solidus_backend'
+gem 'solidus_core'
+gem 'solidus_auth_devise'
+
+# Solidus Extensions
+gem 'solidus_related_products'
+
 group :development, :test do
+  gem 'solidus_sample'
+
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
   gem 'pry-rails'
