@@ -1,0 +1,13 @@
+<% if @product.has_related_products?('accessories') %>
+    <% accessories = @product.accessories %>
+    <% accessories.each do |accessory| %>
+    <div>
+        <%= link_to(
+                image_tag(accessory.display_image.attachment.url(:mini)),
+                product_path(accessory)
+            )
+        %>
+        <%= link_to accessory.name, product_path(accessory) %>
+    </div>
+    <% end %>
+<% end %>
