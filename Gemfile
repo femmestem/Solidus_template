@@ -35,6 +35,8 @@ gem 'solidus_auth_devise'
 
 # Solidus Extensions
 gem 'solidus_related_products'
+gem 'solidus_gateway'
+gem 'braintree'
 
 group :development, :test do
   gem 'solidus_sample'
